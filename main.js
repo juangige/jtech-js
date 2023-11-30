@@ -38,21 +38,21 @@ let descuento = 0;
 
 switch(menu){
     case "1":
-        descuento = valorUsuario * 0.1
+        descuento = resultadoSuma * 0.1
         break
 
     case "2":
-        descuento = valorUsuario * 0.3
+        descuento = resultadoSuma * 0.3
         break
 
     case "3":
-        descuento = valorUsuario * 0.45
+        descuento = resultadoSuma * 0.45
         break
     default:
         console.log("No se aplican descuentos al valor ingresado")
 }
 
-let valorConDescuento = valorUsuario - descuento
+let valorConDescuento = resultadoSuma - descuento
 console.log("Valor con descuento aplicado: " + valorConDescuento.toFixed(2))
 alert("Gracias por utilizar este servicio!")
 console.log("Vuelvas prontos")
