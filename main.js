@@ -1,6 +1,6 @@
 // Calculadora de impuestos y descuentos
 
-let valorUsuario = 0;
+let valorUsuario = 0
 
 while(true){
 
@@ -39,19 +39,20 @@ let descuento = 0;
 switch(menu){
     case "1":
         descuento = valorUsuario * 0.1
-        break;
+        break
 
     case "2":
         descuento = valorUsuario * 0.3
-        break;
+        break
 
     case "3":
         descuento = valorUsuario * 0.45
-        break;
+        break
     default:
-        console.log("Gracias por utilizar este servicio!")
+        console.log("No se aplican descuentos al valor ingresado")
 }
 
-let valorConDescuento = valorUsuario - descuento;
+let valorConDescuento = valorUsuario - descuento
 console.log("Valor con descuento aplicado: " + valorConDescuento.toFixed(2))
-console.log("Gracias por utilizar este servicio!")
+alert("Gracias por utilizar este servicio!")
+console.log("Vuelvas prontos")
