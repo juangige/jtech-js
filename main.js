@@ -1,4 +1,4 @@
-// Calculadora de impuestos y descuentos
+// Calculadora de impuestos, descuentos y cuotas
 
 let valorUsuario = 0
 
@@ -50,11 +50,16 @@ switch(menu){
         break
     default:
             console.log("No se aplican descuentos al valor ingresado")
+           
 }
 
-let valorConDescuento = resultadoSuma - descuento
-console.log("Valor con descuento aplicado: " + valorConDescuento.toFixed(2))
 
+let valorConDescuento = resultadoSuma - descuento
+if (!isNaN(parseFloat(menu))){
+    console.log("Valor con descuento aplicado: " + valorConDescuento.toFixed(2))
+}else{
+    console.log("Valor sin descuento aplicado: "+resultadoSuma.toFixed(2))
+}
 
 
 // Cuotas a elegir
@@ -76,7 +81,7 @@ switch(menuCuotas){
         break
 
     default:
-        console.log("Número de cuotas no válido")
+        console.log("Cantidad de cuotas invalidas.")
         break
 }
 
