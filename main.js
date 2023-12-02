@@ -54,5 +54,40 @@ switch(menu){
 
 let valorConDescuento = resultadoSuma - descuento
 console.log("Valor con descuento aplicado: " + valorConDescuento.toFixed(2))
+
+
+
+// Cuotas a elegir
+
+let menuCuotas = parseInt(prompt("Cuotas sin interes a elegir: 3, 6, 12"));
+let cuotas1 = 0
+
+switch(menuCuotas){
+    case 3:
+        cuotas1 = valorConDescuento / 3
+        break
+
+    case 6:
+        cuotas1 = valorConDescuento / 6
+        break
+
+    case 12:
+        cuotas1 = valorConDescuento / 12
+        break
+
+    default:
+        console.log("Número de cuotas no válido")
+        break
+}
+
+
+let cuotaElegida = cuotas1.toFixed(2)
+
+if (menuCuotas === 3 || menuCuotas === 6 || menuCuotas === 12) {
+    console.log("Cantidad de cuotas elegidas: " + menuCuotas)
+}
+
+console.log("Cuotas a pagar: " + cuotaElegida);
+
 alert("Gracias por utilizar este servicio!")
 console.log("Vuelvas prontos")
