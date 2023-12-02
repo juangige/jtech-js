@@ -33,23 +33,23 @@ console.log("El valor con IVA es: " +resultadoSuma.toFixed(2))
 
 // Aplicar descuentos
 
-let menu = prompt("Seleccione un descuento en efectivo a aplicar: 1 para 10%, 2 para 30%, 3 para 45% o cualquier numero si no aplica descuento ")
+let menu = prompt("Seleccione un descuento en efectivo a aplicar: 10%, 20%, 45% o cualquier tecla si no aplica descuento ")
 let descuento = 0;
 
 switch(menu){
-    case "1":
+    case "10":
         descuento = resultadoSuma * 0.1
         break
 
-    case "2":
-        descuento = resultadoSuma * 0.3
+    case "20":
+        descuento = resultadoSuma * 0.2
         break
 
-    case "3":
+    case "45":
         descuento = resultadoSuma * 0.45
         break
     default:
-        console.log("No se aplican descuentos al valor ingresado")
+            console.log("No se aplican descuentos al valor ingresado")
 }
 
 let valorConDescuento = resultadoSuma - descuento
